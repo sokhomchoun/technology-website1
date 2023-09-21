@@ -46,7 +46,7 @@ select {
 /* ---- load header ---- */
 .hp_logo_category {
     position: fixed;
-    top: 50;
+    top: 80;
     width: 100%;
     /* height: 70px; */
     display: flex;
