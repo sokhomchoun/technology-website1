@@ -35,3 +35,34 @@ setInterval(function() {
     didScroll = false;
    }
 }, 250)
+
+
+
+
+//Product dropdown
+
+/****drop_menu_bar for medium device  */
+$(".nav_toggle").on("click", function () {
+  $('.bar_1').toggleClass('active');
+  $('.bar_2').toggleClass('active_2');
+  $('.bar_3').toggleClass('active_3');
+  $('.hp_nav').toggleClass('nav_show')
+});
+
+
+/**********clickbale menubar******/
+$('.hp-list_item').on('click', function () {
+  $(this).find('.drop_down').toggleClass('show');
+  $(this).siblings().find('.drop_down.show').removeClass('show');
+
+  $(this).find('.drop_down').addClass('min_show');
+  $(this).siblings().find('.drop_down.min_show').removeClass('.min_show');
+});
+
+
+/*****close clickbale menu_bar on outside */
+$(document).on('click', function (event) {
+  if ($(event.target).closest('.hp_nav').length == 0) {
+      $(this).find('.nav_item .list_item .drop_down.show').removeClass('show');
+  }
+});
