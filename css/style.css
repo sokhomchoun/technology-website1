@@ -64,7 +64,7 @@ select {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1.2px;
 }
   
@@ -147,6 +147,147 @@ select {
 .hp_logo img{
     height: 70px;
 }
+
+
+
+
+
   
+  h1 {
+    font-size: 30px;
+  }
+  
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    margin-top: 9rem;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 21.2em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 20em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .rotating-text-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .rotating-text-wrapper h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0.3em;
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  .rotating-text-wrapper h2:nth-child(1) {
+    background-color: lightseagreen;
+    animation-name: rotating-text-1;
+  }
+  @keyframes rotating-text-1 {
+    0% {
+      transform: translateY(200%);
+    }
+    33% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(2) {
+    background-color: tomato;
+    animation-name: rotating-text-2;
+  }
+  @keyframes rotating-text-2 {
+    33% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    66% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    67% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(3) {
+    background-color: cornflowerblue;
+    animation-name: rotating-text-3;
+  }
+  @keyframes rotating-text-3 {
+    66% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    99% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
   
   
