@@ -14,9 +14,15 @@
 <body>
 
     <!-- for header technology Website -->
-    <header class="hp_header_position">
-        <div class="hp_header"> <!-- hp_header for manage header in website -->
-            <h3>Header</h3>
+    <header class="hp_header_position" id="hp_scroll_load_change_background">
+        <div class="hp_header d-flex justify-content-center"> <!-- hp_header for manage header in website -->
+            <div class="hp_icon_home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="hp_box_search">
+                <i class="fa fa-search" aria-hidden="true" id="hp_find_information"></i>
+                <input class="form-control" placeholder="Find Information" >
+            </div>
         </div>
 
     </header>
@@ -24,103 +30,44 @@
     <!-- body technology Website -->
     <section class="hp_background"> <!-- hp_background for display background -->
         <div class="hp_little">
-
             <nav class="hp_logo_category d-flex justify-content-between"> <!-- header scroll buttom diplay node -->
-
                 <div class="hp_logo">
                     <img src="images/logo.png" alt="">
                 </div>
-                <div class="hp_category"> <!-- collection list drop down -->
-                    <div class="hp_seleted_category">
-                        <div class="hp_top_category">
-                            <div class="hp_nav">
-                                <ul class="nav_item">
-                                    <li class="hp-list_item"><a class="nav_link">Category1 <i class="fa fa-chevron-down" aria-hidden="true" id="hp_chevron"></i>
-                                        </a>
-                                        <div class="drop_down">
-                                            <ul class="drop_menu"> <!-- drop down list -->
-                                                <li class="list_items"><a href="#" class="nav_links">item1</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item2</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item3</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item4</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item5</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hp-list_item"><a class="nav_link">Category1 <i class="fa fa-chevron-down" aria-hidden="true" id="hp_chevron"></i>
-                                        </a>
-                                        <div class="drop_down">
-                                            <ul class="drop_menu"> <!-- drop down list -->
-                                                <li class="list_items"><a href="#" class="nav_links">item1</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item2</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item3</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item4</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item5</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hp-list_item"><a class="nav_link">Category1 <i class="fa fa-chevron-down" aria-hidden="true" id="hp_chevron"></i>
-                                        </a>
-                                        <div class="drop_down">
-                                            <ul class="drop_menu"> <!-- drop down list -->
-                                                <li class="list_items"><a href="#" class="nav_links">item1</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item2</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item3</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item4</a></li>
-                                                <li class="list_items"><a href="#" class="nav_links">item5</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hp-list_item"><a class="nav_link">Category1 <i class="fa fa-chevron-down" aria-hidden="true" id="hp_chevron"></i>
-                                    </a>
-                                    <div class="drop_down">
-                                        <ul class="drop_menu"> <!-- drop down list -->
-                                            <li class="list_items"><a href="#" class="nav_links">item1</a></li>
-                                            <li class="list_items"><a href="#" class="nav_links">item2</a></li>
-                                            <li class="list_items"><a href="#" class="nav_links">item3</a></li>
-                                            <li class="list_items"><a href="#" class="nav_links">item4</a></li>
-                                            <li class="list_items"><a href="#" class="nav_links">item5</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="hp_sub_page d-flex">  <!-- category page -->
+                    <div class="hp_category_one">
+                        <p class="hp_color_cate">Science</p>
+                    </div>
+                    <div class="hp_category_one">
+                        <p class="hp_color_cate">Technology</p>
+                    </div>
+                    <div class="hp_category_one">
+                        <p class="hp_color_cate">Energy</p>
+                    </div>
+                    <div class="hp_category_one">
+                        <p class="hp_color_cate">Security</p>
                     </div>
                 </div>
-
             </nav>
-
-
-
-
-
-
-            <div class="hp_category_new"> <!-- hp_category for display on background -->
-                <!-- <h1 style="color: black;">Choice mountains bro</h1>
-            <p style="color:black">Its like im actually there! But sitting at a computer. Wow, the future is intense!</p> -->
-            
-            <h1>
-                <span class="text_1">Fancy heading on your static web page</span>
-                <span class="text_2">What?? How does it change without JavaScript?</span>
+            <div class="hp_category_new"> 
+            <h1 class="hp_retetion_text">
+                <span class="hp_text_1">we instituted​​ purpose to sharing a recent innovation information</span>
+                <span class="hp_text_2">What?? How does it change without JavaScript?</span>
             </h1>
-
-
-                    
             <div class="rotating-text-wrapper">
-                <h2>Welcome to Coding Yaar</h2>
-                <h2>This is a text animation</h2>
-                <h2><img src="images/logo.png" alt=""></h2>
+                <div class="hp_load_image1"><img src="images/white_background.jpg" alt=""></div>
+                <div class="hp_load_image2"><img src="images/technology.png" alt="" ></div>
             </div>
   
-            
             </div>
         </div>
     </section>
 
 
 
-    <h4>hesff</h4>
+    <div class="container">
+
+        <h4>hesff</h4>
     <h4>hesff</h4>
     <h4>hesff</h4>
     <h4>hesff</h4>
@@ -145,6 +92,10 @@
     <h4>hesff</h4>
 
     <h1>Testing</h1>
+
+    </div>
+
+    
 
 
 
