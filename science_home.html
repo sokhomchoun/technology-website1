@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybertron</title>
+    <link href="css/science.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
+
+</head>
+<body >
+
+    <!-- header -->
+    <header class="header-top" id="top">
+        <div class="science-header">
+            <img class="logo-size-pc" src="images/logo.png"/>
+            <img class="logo-size-sm" src="images/sizephone_logo.png" />
+            <h1 class="title-page">SCIENCE</h1>
+
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- middle image -->
+    <section class="background-img-section">
+        <div class="background-img">
+            <img src="images/science/Image1.jpg" />
+        </div>
+        <h1 class="title-body">Science In Your Hand</h1>
+    </section>
+    <!-- end middle image -->
+    <!-- content -->
+    <div class="container mg-0">
+        <div class="container-flex">
+            <div class="container-01">
+                <div type="button" class="btn-category">Computer</div>
+            </div>
+            <div class="container-02">
+                <div class="container-02-01">
+
+                    <div class="main">
+                        <div class="slider slider-for" style="display: none;">
+                          <div><h3>1</h3></div>
+                          <div><h3>2</h3></div>
+                          <div><h3>3</h3></div>
+                          <div><h3>4</h3></div>
+                          <div><h3>5</h3></div>
+                        </div>
+                        <div class="slider slider-nav">
+                            <div>
+                                <h3>
+                                    <img src="images/science/Image1.jpg" style="width: 100%;"/>
+                                   
+                                </h3> 
+                            </div>
+                          <div><h3>2</h3></div>
+                          <div><h3>3</h3></div>
+                          <div><h3>4</h3></div>
+                          <div><h3>5</h3></div>
+                        </div>
+                      </div>
+
+                    <!-- <div class="popup-item" >
+                        <div class="img-title">
+                            <img src="images/science/Image1.jpg" />
+                            <p class="item-title">TITLE1</p>
+                        </div>
+                        <div>
+                            <p class="item-description">Information item1...</p>
+                        </div>
+                    </div>
+                    <ul class="list-item-group">
+                        <li class="each-item">
+                            <div class="img-title">
+                                <img src="images/science/new1.jpg"/>
+                                <p class="item-title">TITLE1</p>
+                            </div>
+                            
+                            <div>
+                                <p class="item-description">Information item1...</p>
+                            </div>
+                        </li>
+                        <li class="each-item">
+                            <div class="img-title">
+                                <img src="images/science/new2.jpg" />
+                                <p class="item-title">TITLE2</p>
+                            </div>
+                            <div>
+                                <p class="item-description">Information item2...</p>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- <div class="main">
+        <div class="slider slider-for" style="display: none;">
+          <div><h3>1</h3></div>
+          <div><h3>2</h3></div>
+          <div><h3>3</h3></div>
+          <div><h3>4</h3></div>
+          <div><h3>5</h3></div>
+        </div>
+        <div class="slider slider-nav">
+          <div><h3>1</h3></div>
+          <div><h3>2</h3></div>
+          <div><h3>3</h3></div>
+          <div><h3>4</h3></div>
+          <div><h3>5</h3></div>
+        </div>
+      </div> -->
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+         $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            speed:3000,
+            asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true
+    });
+
+ $('a[data-slide]').click(function(e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.slider-nav').slick('slickGoTo', slideno - 1);
+    });
+    </script>
+</body>
+</html>
