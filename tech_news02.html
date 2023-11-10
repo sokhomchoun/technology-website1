@@ -48,7 +48,7 @@
         <!-- news details section start -->
         <section class="news_details">
             <div class="main">
-                <div class="main-01">
+                <div class="main-01" id="one">
                     <div class="news_title">
                         <h1>AI Is Already at a Tipping Point</h1>
                     </div>
@@ -169,10 +169,140 @@
                     <!-- related news end -->
                 </div>
             </div>
+
+            <div class="main" id="two">
+                <div class="main-01" >
+                    <div class="news_title">
+                        <h1>AI Is Already at a Tipping Point</h1>
+                    </div>
+                    <div class="datetime">
+                        <i class="fa fa-clock-o"></i>
+                        <span>October, 25, 2023</span>
+                    </div>
+                    <div class="news_image">
+                        <img src="images/photo_info2.png" alt="">
+                    </div>
+                    <div class="new-category-quantity d-flex">
+                        <div class="qtyplus" value="+">
+                            <button class="hp_button_like">
+                    <div class="hand">
+                        <div class="thumb"></div>       
+                    </div>    
+                    </button>
+                        </div>
+                        <input name="quantity" value="35" class="info">
+
+                        <div class="hp_comment d-flex align-items-center">
+                            <i class="fa fa-comment-o" aria-hidden="true" id="hp_icon_comment"></i><span class="number_cate">15</span>
+                            <!-- <p class="hp_cate">0</p> -->
+                        </div>
+                    </div>
+                    <!-- three dot menu -->
+                    <div class="dot_dropdown">
+                        <!-- three dots -->
+                        <ul class="dropbtn dot_icons btn-right showLeft" onclick="showDropdown1()">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <!-- menu -->
+                        <div id="hp_dropdown_list1" class="dropdown-content">
+                            <a href=""><i class="fa fa-share" aria-hidden="true"></i><span class="hp_share">Share</span></a>
+                            <a href=""><i class="fa fa-floppy-o" aria-hidden="true"></i><span class="hp_share">Save</span></a>
+                            <a href="#contact"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="hp_share">Report</span></a>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Qualcomm has announced that it will officially unveil a new chip that supports AI functionality for Microsoft Windows PCs, and claims that it will be faster than Apple's chip. On another Mac. <br><br>Qualcomm has said that the company's new Snapdragon Elite X chip will be available on PCs from next year, with a redesign to handle more AI tasks. Great for summarizing emails, writing articles and creating images. <br><br>
+                            Those AI features will also be a key part of Qualcomm's chips for smartphones, as Google and Meta have both expressed satisfaction and plans to use them.
+                            <span id="dots">...</span><span id="more">
+                                <img src="images/tech_img2.1.jpg" alt="" id="news_image">
+                                At the same time, Microsoft called the new chip will help businesses and consumers in the new era of AI PCs.
+                                <br><br>
+                                According to Qualcomm on October 24, the new chip is faster than the M2 Max in some functions and more powerful than Apple and Intel chips.
+                            </span>
+                        </p>
+                        <button onclick="readmore()" id="btn-readmore">Read more</button>
+                    </div>
+                    <!-- related news start -->
+
+                    <!-- related news end -->
+                </div>
+            </div>
+
+
+            <div class="main" id="three">
+                <div class="main-01" >
+                    <div class="news_title">
+                        <h1>AI Is Already at a Tipping Point</h1>
+                    </div>
+                    <div class="datetime">
+                        <i class="fa fa-clock-o"></i>
+                        <span>October, 25, 2023</span>
+                    </div>
+                    <div class="news_image">
+                        <img src="images/photo_info2.png" alt="">
+                    </div>
+                    <div class="new-category-quantity d-flex">
+                        <div class="qtyplus" value="+">
+                            <button class="hp_button_like">
+                    <div class="hand">
+                        <div class="thumb"></div>       
+                    </div>    
+                    </button>
+                        </div>
+                        <input name="quantity" value="35" class="info">
+
+                        <div class="hp_comment d-flex align-items-center">
+                            <i class="fa fa-comment-o" aria-hidden="true" id="hp_icon_comment"></i><span class="number_cate">15</span>
+                            <!-- <p class="hp_cate">0</p> -->
+                        </div>
+                    </div>
+                    <!-- three dot menu -->
+                    <div class="dot_dropdown">
+                        <!-- three dots -->
+                        <ul class="dropbtn dot_icons btn-right showLeft" onclick="showDropdown1()">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <!-- menu -->
+                        <div id="hp_dropdown_list1" class="dropdown-content">
+                            <a href=""><i class="fa fa-share" aria-hidden="true"></i><span class="hp_share">Share</span></a>
+                            <a href=""><i class="fa fa-floppy-o" aria-hidden="true"></i><span class="hp_share">Save</span></a>
+                            <a href="#contact"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="hp_share">Report</span></a>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Qualcomm has announced that it will officially unveil a new chip that supports AI functionality for Microsoft Windows PCs, and claims that it will be faster than Apple's chip. On another Mac. <br><br>Qualcomm has said that the company's new Snapdragon Elite X chip will be available on PCs from next year, with a redesign to handle more AI tasks. Great for summarizing emails, writing articles and creating images. <br><br>
+                            Those AI features will also be a key part of Qualcomm's chips for smartphones, as Google and Meta have both expressed satisfaction and plans to use them.
+                            <span id="dots">...</span><span id="more">
+                                <img src="images/tech_img2.1.jpg" alt="" id="news_image">
+                                At the same time, Microsoft called the new chip will help businesses and consumers in the new era of AI PCs.
+                                <br><br>
+                                According to Qualcomm on October 24, the new chip is faster than the M2 Max in some functions and more powerful than Apple and Intel chips.
+                            </span>
+                        </p>
+                        <button onclick="readmore()" id="btn-readmore">Read more</button>
+                    </div>
+                    <!-- related news start -->
+
+                    <!-- related news end -->
+                </div>
+            </div>
+
+
+
+
+
+
+
             <!--  aside start-->
             <aside class="aside">
                 <!-- popular start -->
-                <div class="aside-container">
+                <!-- <div class="aside-container">
                     <div class="aside-head">
                        <span>Popular News</span>
                         <div class="head-line"></div>
@@ -237,7 +367,7 @@
                             </div>
                        </div>
                     </a>
-                </div>
+                </div> -->
                 <!-- popluar end -->
                 <!-- most watched start -->
                 <div class="aside-container">
@@ -246,31 +376,65 @@
                         <span>Most Watched</span>
                         <div class="head-line"></div>
                     </div>
-                    <a class="media media-link" href="tech_news02.html">
-                        <div class="item-img">
-                            <img src="images/tech_img2.jpg" alt="">
-                        </div>
-                       <div class="item-text">
-                            New chip era! Qualcomm ready to release AI chip for Windows PC faster ...
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i>
-                                <span>October, 25, 2023</span>
+
+
+                    <div class="link_image">
+                        <div class="click_image" onClick="information11()">
+                        <a class="media media-link" href="tech_news02.html" >
+                            <div class="item-img">
+                                <img src="images/tech_img2.jpg" alt="">
                             </div>
-                       </div>
-                    </a>
-                    <a class="media media-link" href="tech_news03.html">
-                        <div class="item-img">
-                            <img src="images/tech_img2.jpg" alt="">
+                        
+                        <div class="item-text">
+                                New chip era! Qualcomm ready to release AI chip for Windows PC faster ...
+                                <div class="time">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>October, 25, 2023</span>
+                                </div>
                         </div>
-                       <div class="item-text">
-                            New chip era! Qualcomm ready to release AI chip for Windows PC faster ...
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i>
-                                <span>October, 25, 2023</span>
+                        </a>
+                    </div>
+                    </div>
+
+
+                    <div class="link_iamge">
+                        <div class="click_image" onClick="information12()">
+                        <a class="media media-link">
+                            <div class="item-img">
+                                <img src="images/photo_info2.png" alt="">
                             </div>
-                       </div>
-                    </a>
-                    <a class="media media-link" href="tech_news04.html">
+                           <div class="item-text">
+                                New chip era! Qualcomm ready to release AI chip for Windows PC faster ...
+                                <div class="time">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>October, 25, 2023</span>
+                                </div>
+                           </div>
+                        </a>
+                    </div>
+                    </div>
+
+
+
+                    <div class="link_iamge">
+                        <div class="click_image" onClick="information13()">
+                        <a class="media media-link">
+                            <div class="item-img">
+                                <img src="images/photo_info2.png" alt="">
+                            </div>
+                           <div class="item-text">
+                                New chip era! Qualcomm ready to release AI chip for Windows PC faster ...
+                                <div class="time">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>October, 25, 2023</span>
+                                </div>
+                           </div>
+                        </a>
+                    </div>
+                    </div>
+
+
+                    <!-- <a class="media media-link" href="tech_news04.html">
                         <div class="item-img">
                             <img src="images/tech_img2.jpg" alt="">
                         </div>
@@ -293,7 +457,7 @@
                                 <span>October, 25, 2023</span>
                             </div>
                        </div>
-                    </a>
+                    </a> -->
                 </div>
                 <!-- most watched end -->
             </aside>
@@ -309,9 +473,46 @@
         </footer>
     </div>
 
+
     <script src="js/slick_jquery.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/see-more.js" type="text/javascript"></script>
+
+
+
+
+    <style>
+        #two, #three{
+            display: none;
+        }
+    </style>
+
+
+
+
+
 </body>
 
+<script>
+    const information11 = () => {
+        document.getElementById("one").style.display ='block';
+        document.getElementById("two").style.display ='none'
+        document.getElementById("three").style.display ='none'
+      }
+      const information12 = () => {
+        document.getElementById("two").style.display ='block'
+        document.getElementById("one").style.display ='none'
+        document.getElementById("three").style.display ='none'
+      }
+      const information13 = () => {
+        document.getElementById("three").style.display ='block'
+        document.getElementById("one").style.display ='none'
+        document.getElementById("two").style.display ='none'
+      }
+      
+</script>
+
 </html>
+
+
+
