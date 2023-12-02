@@ -158,9 +158,6 @@
   .card-container:hover .card .description a{
     text-decoration: underline !important;
   }
-.science-top{
-  position: relative;
-}
 
 
   @media (max-width: 768px) {
