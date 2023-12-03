@@ -7,456 +7,534 @@
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/detail_style.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-icon.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
-    <title>technology</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-icon.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/detail_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-3/css/4-1-3.css"
+      rel="stylesheet"
+    />
+    <title>Technology</title>
   </head>
 
   <body>
-    <!-- progress bar div -->
-    <div class="post-container">
-      <div class="progress-bar-container">
-        <div class="progress-bar-container__progress"></div>
-      </div>
-      <!-- for header technology Website -->
-      <header class="hp_header_position" id="hp_scroll_load_change_background">
-        <div class="hp_header d-flex justify-content-between">
-          <!-- hp_header for manage header in website -->
-          <!-- <div class="hp_icon_home">
-                <i class="fa fa-home" aria-hidden="true"></i>
-            </div> -->
-
-          <div class="hp_header_image">
-            <img src="images/logo.png" alt="" />
-          </div>
-
-          <div class="hp_box_search">
-            <i
-              class="fa fa-search"
-              aria-hidden="true"
-              id="hp_find_information"
-            ></i>
-            <input class="form-control" placeholder="Find Information" />
-          </div>
-
-          <div class="nav navigation-wrapper">
-            <ul class="nav-list">
-              <li class="nav-link">Science</li>
-              <li class="nav-link">Technology</li>
-              <li class="nav-link">Energy</li>
-              <li class="nav-link">Security</li>
-            </ul>
-          </div>
+    <div class="loading_page">
+      <div class="post-container">
+        <!-- progress bar div -->
+        <div class="progress-bar-container">
+          <div class="progress-bar-container__progress"></div>
         </div>
-      </header>
-      <!-- news details section start -->
-      <div id="top"></div>
-      <section class="news_details">
-        <div class="main" id="one">
-          <div class="main-01">
-            <div class="news_title">
-              <h1>AI Is Already at a Tipping Point</h1>
-            </div>
-            <div class="datetime">
-              <i class="fa fa-clock-o"></i>
-              <span>October, 25, 2023</span>
-            </div>
-            <div class="news_image">
-              <img src="images/tech_img2.jpg" alt="" />
-            </div>
-            <div class="new-category-quantity d-flex">
-              <div class="qtyplus" value="+">
-                <button class="hp_button_like">
-                  <div class="hand">
-                    <div class="thumb"></div>
-                  </div>
-                </button>
-              </div>
-              <input name="quantity" value="35" class="info" />
 
-              <div class="hp_comment d-flex align-items-center">
-                <i
-                  class="fa fa-comment-o"
-                  aria-hidden="true"
-                  id="hp_icon_comment"
-                ></i
-                ><span class="number_cate">15</span>
-                <!-- <p class="hp_cate">0</p> -->
-              </div>
+        <!-- for header technology Website -->
+        <header
+          class="hp_header_position"
+          id="hp_scroll_load_change_background"
+        >
+          <div
+            class="container hp_header d-flex justify-content-between"
+            id="hp_size_info"
+          >
+            <!-- hp_header for manage header in website -->
+            <!-- <div class="hp_icon_home">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div> -->
+
+            <div class="hp_header_image">
+              <img src="images/logo.png" alt="" />
             </div>
-            <!-- three dot menu -->
-            <div class="dot_dropdown">
-              <!-- three dots -->
-              <ul
-                class="dropbtn dot_icons btn-right showLeft"
-                onclick="Dropdown1()"
-              >
-                <li></li>
-                <li></li>
-                <li></li>
+
+            <div class="hp_box_search">
+              <i
+                class="fa fa-search"
+                aria-hidden="true"
+                id="hp_find_information"
+              ></i>
+              <input class="form-control" placeholder="Find Information" />
+            </div>
+
+            <div class="nav navigation-wrapper">
+              <ul class="nav-list">
+                <li class="nav-link">Science</li>
+                <li class="nav-link">Technology</li>
+                <li class="nav-link">Energy</li>
+                <li class="nav-link">About Us</li>
               </ul>
-              <!-- menu -->
-              <div id="hp_dropdown_list1" class="dropdown-content">
-                <a href=""
-                  ><i class="fa fa-share" aria-hidden="true"></i
-                  ><span class="hp_share">Share</span></a
-                >
-                <a href=""
-                  ><i class="fa fa-floppy-o" aria-hidden="true"></i
-                  ><span class="hp_share">Save</span></a
-                >
-                <a href="#contact"
-                  ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
-                  ><span class="hp_share">Report</span></a
-                >
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                Qualcomm has announced that it will officially unveil a new chip
-                that supports AI functionality for Microsoft Windows PCs, and
-                claims that it will be faster than Apple's chip. On another Mac.
-                <br /><br />Qualcomm has said that the company's new Snapdragon
-                Elite X chip will be available on PCs from next year, with a
-                redesign to handle more AI tasks. Great for summarizing emails,
-                writing articles and creating images. <br /><br />
-                Those AI features will also be a key part of Qualcomm's chips
-                for smartphones, as Google and Meta have both expressed
-                satisfaction and plans to use them.
-                <span id="dots1">...</span
-                ><span id="more1">
-                  <img src="images/tech_img2.1.jpg" alt="" class="news_image" />
-                  At the same time, Microsoft called the new chip will help
-                  businesses and consumers in the new era of AI PCs.
-                  <br /><br />
-                  According to Qualcomm on October 24, the new chip is faster
-                  than the M2 Max in some functions and more powerful than Apple
-                  and Intel chips.
-                </span>
-              </p>
-              <button onclick="readmore1()" class="btn-readmore" id="btn1">
-                Read more
-              </button>
             </div>
           </div>
-        </div>
-
-        <div class="main" id="two">
-          <div class="main-01">
-            <div class="news_title">
-              <h1>AI Is Already at a Tipping Point</h1>
-            </div>
-            <div class="datetime">
-              <i class="fa fa-clock-o"></i>
-              <span>October, 25, 2023</span>
-            </div>
-            <div class="news_image">
-              <img src="images/photo_info2.png" alt="" />
-            </div>
-            <div class="new-category-quantity d-flex">
-              <div class="qtyplus" value="+">
-                <button class="hp_button_like">
-                  <div class="hand">
-                    <div class="thumb"></div>
-                  </div>
-                </button>
+        </header>
+        <!-- news details section start -->
+        <div id="top"></div>
+        <section class="news_details">
+          <div class="main" id="one">
+            <div class="main-01">
+              <div class="news_title">
+                <h1>AI Is Already at a Tipping Point</h1>
               </div>
-              <input name="quantity" value="35" class="info" />
-
-              <div class="hp_comment d-flex align-items-center">
-                <i
-                  class="fa fa-comment-o"
-                  aria-hidden="true"
-                  id="hp_icon_comment"
-                ></i
-                ><span class="number_cate">15</span>
-                <!-- <p class="hp_cate">0</p> -->
+              <div class="datetime">
+                <i class="fa fa-clock-o"></i>
+                <span>October, 25, 2023</span>
               </div>
-            </div>
-            <!-- three dot menu -->
-            <div class="dot_dropdown">
-              <!-- three dots -->
-              <ul
-                class="dropbtn dot_icons btn-right showLeft"
-                onclick="Dropdown2()"
-              >
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <!-- menu -->
-              <div id="hp_dropdown_list2" class="dropdown-content">
-                <a href=""
-                  ><i class="fa fa-share" aria-hidden="true"></i
-                  ><span class="hp_share">Share</span></a
-                >
-                <a href=""
-                  ><i class="fa fa-floppy-o" aria-hidden="true"></i
-                  ><span class="hp_share">Save</span></a
-                >
-                <a href="#contact"
-                  ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
-                  ><span class="hp_share">Report</span></a
-                >
+              <div class="news_image">
+                <img src="images/tech_img2.jpg" alt="" />
               </div>
-            </div>
-            <div class="description">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-                sunt nihil beatae distinctio quos eveniet, ipsum deserunt
-                recusandae rerum aliquam.
-                <br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus labore illum quas incidunt. Sapiente eum adipisci,
-                exercitationem, quis perspiciatis recusandae est ea laudantium
-                quisquam nesciunt consectetur animi tempora error corrupti.
-                <br /><br />
-                Those AI features will also be a key part of Qualcomm's chips
-                for smartphones, as Google and Meta have both expressed
-                satisfaction and plans to use them.
-                <span id="dots2">...</span
-                ><span id="more2">
-                  <img src="images/tech_img2.1.jpg" alt="" class="news_image" />
-                  At the same time, Microsoft called the new chip will help
-                  businesses and consumers in the new era of AI PCs.
-                  <br /><br />
-                  According to Qualcomm on October 24, the new chip is faster
-                  than the M2 Max in some functions and more powerful than Apple
-                  and Intel chips. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Ipsa dolores quidem autem, distinctio unde
-                  consequuntur alias libero omnis vel officia? Rerum illo velit
-                  aliquid assumenda minus iusto, veritatis inventore sint?
-                </span>
-              </p>
-              <button onclick="readmore2()" class="btn-readmore" id="btn2">
-                Read more
-              </button>
-            </div>
-            <!-- related news start -->
-
-            <!-- related news end -->
-          </div>
-        </div>
-
-        <div class="main" id="three">
-          <div class="main-01">
-            <div class="news_title">
-              <h1>AI Is Already at a Tipping Point</h1>
-            </div>
-            <div class="datetime">
-              <i class="fa fa-clock-o"></i>
-              <span>October, 25, 2023</span>
-            </div>
-            <div class="news_image">
-              <img src="images/photo_info3.png" alt="" />
-            </div>
-            <div class="new-category-quantity d-flex">
-              <div class="qtyplus" value="+">
-                <button class="hp_button_like">
-                  <div class="hand">
-                    <div class="thumb"></div>
-                  </div>
-                </button>
-              </div>
-              <input name="quantity" value="35" class="info" />
-
-              <div class="hp_comment d-flex align-items-center">
-                <i
-                  class="fa fa-comment-o"
-                  aria-hidden="true"
-                  id="hp_icon_comment"
-                ></i
-                ><span class="number_cate">15</span>
-                <!-- <p class="hp_cate">0</p> -->
-              </div>
-            </div>
-            <!-- three dot menu -->
-            <div class="dot_dropdown">
-              <!-- three dots -->
-              <ul
-                class="dropbtn dot_icons btn-right showLeft"
-                onclick="Dropdown3()"
-              >
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <!-- menu -->
-              <div id="hp_dropdown_list3" class="dropdown-content">
-                <a href=""
-                  ><i class="fa fa-share" aria-hidden="true"></i
-                  ><span class="hp_share">Share</span></a
-                >
-                <a href=""
-                  ><i class="fa fa-floppy-o" aria-hidden="true"></i
-                  ><span class="hp_share">Save</span></a
-                >
-                <a href="#contact"
-                  ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
-                  ><span class="hp_share">Report</span></a
-                >
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                Qualcomm has announced that it will officially unveil a new chip
-                that supports AI functionality for Microsoft Windows PCs, and
-                claims that it will be faster than Apple's chip. On another Mac.
-                <br /><br />Qualcomm has said that the company's new Snapdragon
-                Elite X chip will be available on PCs from next year, with a
-                redesign to handle more AI tasks. Great for summarizing emails,
-                writing articles and creating images. <br /><br />
-                Those AI features will also be a key part of Qualcomm's chips
-                for smartphones, as Google and Meta have both expressed
-                satisfaction and plans to use them.
-                <span id="dots3">...</span
-                ><span id="more3">
-                  <img src="images/tech_img2.1.jpg" alt="" class="news_image" />
-                  At the same time, Microsoft called the new chip will help
-                  businesses and consumers in the new era of AI PCs.
-                  <br /><br />
-                  According to Qualcomm on October 24, the new chip is faster
-                  than the M2 Max in some functions and more powerful than Apple
-                  and Intel chips.
-                </span>
-              </p>
-              <button onclick="readmore3()" class="btn-readmore" id="btn3">
-                Read more
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="main" id="four">
-          <div class="main-01">
-            <div class="news_title">
-              <h1>AI Is Already at a Tipping Point</h1>
-            </div>
-            <div class="datetime">
-              <i class="fa fa-clock-o"></i>
-              <span>October, 25, 2023</span>
-            </div>
-            <div class="news_image">
-              <img src="images/photo_info2.png" alt="" />
-            </div>
-            <div class="new-category-quantity d-flex">
-              <div class="qtyplus" value="+">
-                <button class="hp_button_like">
-                  <div class="hand">
-                    <div class="thumb"></div>
-                  </div>
-                </button>
-              </div>
-              <input name="quantity" value="35" class="info" />
-
-              <div class="hp_comment d-flex align-items-center">
-                <i
-                  class="fa fa-comment-o"
-                  aria-hidden="true"
-                  id="hp_icon_comment"
-                ></i
-                ><span class="number_cate">15</span>
-                <!-- <p class="hp_cate">0</p> -->
-              </div>
-            </div>
-            <!-- three dot menu -->
-            <div class="dot_dropdown">
-              <!-- three dots -->
-              <ul
-                class="dropbtn dot_icons btn-right showLeft"
-                onclick="Dropdown4()"
-              >
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <!-- menu -->
-              <div id="hp_dropdown_list4" class="dropdown-content">
-                <a href=""
-                  ><i class="fa fa-share" aria-hidden="true"></i
-                  ><span class="hp_share">Share</span></a
-                >
-                <a href=""
-                  ><i class="fa fa-floppy-o" aria-hidden="true"></i
-                  ><span class="hp_share">Save</span></a
-                >
-                <a href="#contact"
-                  ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
-                  ><span class="hp_share">Report</span></a
-                >
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-                sunt nihil beatae distinctio quos eveniet, ipsum deserunt
-                recusandae rerum aliquam.
-                <br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus labore illum quas incidunt. Sapiente eum adipisci,
-                exercitationem, quis perspiciatis recusandae est ea laudantium
-                quisquam nesciunt consectetur animi tempora error corrupti.
-                <br /><br />
-                Those AI features will also be a key part of Qualcomm's chips
-                for smartphones, as Google and Meta have both expressed
-                satisfaction and plans to use them.
-                <span id="dots4">...</span
-                ><span id="more4">
-                  <img src="images/tech_img2.1.jpg" alt="" class="news_image" />
-                  At the same time, Microsoft called the new chip will help
-                  businesses and consumers in the new era of AI PCs.
-                  <br /><br />
-                  According to Qualcomm on October 24, the new chip is faster
-                  than the M2 Max in some functions and more powerful than Apple
-                  and Intel chips. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Ipsa dolores quidem autem, distinctio unde
-                  consequuntur alias libero omnis vel officia? Rerum illo velit
-                  aliquid assumenda minus iusto, veritatis inventore sint?
-                </span>
-              </p>
-              <button onclick="readmore4()" class="btn-readmore" id="btn4">
-                Read more
-              </button>
-            </div>
-            <!-- related news start -->
-
-            <!-- related news end -->
-          </div>
-        </div>
-        <!--  aside start-->
-        <aside class="aside">
-          <!-- popular news start -->
-          <div class="aside-container">
-            <div class="aside-head">
-              <span>Popular News</span>
-              <div class="head-line"></div>
-              <div id="view-all-pop">View All</div>
-            </div>
-
-            <div class="popular-item">
-              <div class="link_image">
-                <div class="click_image" onClick="information01()">
-                  <a class="media media-link" href="#top">
-                    <div class="item-img">
-                      <img src="images/tech_img2.jpg" alt="" />
+              <div class="new-category-quantity d-flex">
+                <div class="qtyplus" value="+">
+                  <button class="hp_button_like">
+                    <div class="hand">
+                      <div class="thumb"></div>
                     </div>
+                  </button>
+                </div>
+                <input name="quantity" value="35" class="info" />
 
-                    <div class="item-text">
-                      New chip era! Qualcomm ready to release AI chip for
-                      Windows PC faster ...
-                      <div class="time">
-                        <i class="fa fa-clock-o"></i>
-                        <span>October, 25, 2023</span>
+                <div class="hp_comment d-flex align-items-center">
+                  <i
+                    class="fa fa-comment-o"
+                    aria-hidden="true"
+                    id="hp_icon_comment"
+                  ></i
+                  ><span class="number_cate">15</span>
+                  <!-- <p class="hp_cate">0</p> -->
+                </div>
+              </div>
+              <!-- three dot menu -->
+              <div class="dot_dropdown">
+                <!-- three dots -->
+                <ul
+                  class="dropbtn dot_icons btn-right showLeft"
+                  onclick="Dropdown1()"
+                >
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <!-- menu -->
+                <div id="hp_dropdown_list1" class="dropdown-content">
+                  <a href=""
+                    ><i class="fa fa-share" aria-hidden="true"></i
+                    ><span class="hp_share">Share</span></a
+                  >
+                  <a href=""
+                    ><i class="fa fa-floppy-o" aria-hidden="true"></i
+                    ><span class="hp_share">Save</span></a
+                  >
+                  <a href="#contact"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
+                    ><span class="hp_share">Report</span></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  Qualcomm has announced that it will officially unveil a new
+                  chip that supports AI functionality for Microsoft Windows PCs,
+                  and claims that it will be faster than Apple's chip. On
+                  another Mac.
+                  <br /><br />Qualcomm has said that the company's new
+                  Snapdragon Elite X chip will be available on PCs from next
+                  year, with a redesign to handle more AI tasks. Great for
+                  summarizing emails, writing articles and creating images.
+                  <br /><br />
+                  Those AI features will also be a key part of Qualcomm's chips
+                  for smartphones, as Google and Meta have both expressed
+                  satisfaction and plans to use them.
+                  <span id="dots1">...</span
+                  ><span id="more1">
+                    <img
+                      src="images/tech_img2.1.jpg"
+                      alt=""
+                      class="news_image"
+                    />
+                    At the same time, Microsoft called the new chip will help
+                    businesses and consumers in the new era of AI PCs.
+                    <br /><br />
+                    According to Qualcomm on October 24, the new chip is faster
+                    than the M2 Max in some functions and more powerful than
+                    Apple and Intel chips.
+                  </span>
+                </p>
+                <button onclick="readmore1()" class="btn-readmore" id="btn1">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main" id="two">
+            <div class="main-01">
+              <div class="news_title">
+                <h1>AI Is Already at a Tipping Point</h1>
+              </div>
+              <div class="datetime">
+                <i class="fa fa-clock-o"></i>
+                <span>October, 25, 2023</span>
+              </div>
+              <div class="news_image">
+                <img src="images/photo_info2.png" alt="" />
+              </div>
+              <div class="new-category-quantity d-flex">
+                <div class="qtyplus" value="+">
+                  <button class="hp_button_like">
+                    <div class="hand">
+                      <div class="thumb"></div>
+                    </div>
+                  </button>
+                </div>
+                <input name="quantity" value="35" class="info" />
+
+                <div class="hp_comment d-flex align-items-center">
+                  <i
+                    class="fa fa-comment-o"
+                    aria-hidden="true"
+                    id="hp_icon_comment"
+                  ></i
+                  ><span class="number_cate">15</span>
+                  <!-- <p class="hp_cate">0</p> -->
+                </div>
+              </div>
+              <!-- three dot menu -->
+              <div class="dot_dropdown">
+                <!-- three dots -->
+                <ul
+                  class="dropbtn dot_icons btn-right showLeft"
+                  onclick="Dropdown2()"
+                >
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <!-- menu -->
+                <div id="hp_dropdown_list2" class="dropdown-content">
+                  <a href=""
+                    ><i class="fa fa-share" aria-hidden="true"></i
+                    ><span class="hp_share">Share</span></a
+                  >
+                  <a href=""
+                    ><i class="fa fa-floppy-o" aria-hidden="true"></i
+                    ><span class="hp_share">Save</span></a
+                  >
+                  <a href="#contact"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
+                    ><span class="hp_share">Report</span></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Natus sunt nihil beatae distinctio quos eveniet, ipsum
+                  deserunt recusandae rerum aliquam.
+                  <br /><br />Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus labore illum quas incidunt. Sapiente
+                  eum adipisci, exercitationem, quis perspiciatis recusandae est
+                  ea laudantium quisquam nesciunt consectetur animi tempora
+                  error corrupti. <br /><br />
+                  Those AI features will also be a key part of Qualcomm's chips
+                  for smartphones, as Google and Meta have both expressed
+                  satisfaction and plans to use them.
+                  <span id="dots2">...</span
+                  ><span id="more2">
+                    <img
+                      src="images/tech_img2.1.jpg"
+                      alt=""
+                      class="news_image"
+                    />
+                    At the same time, Microsoft called the new chip will help
+                    businesses and consumers in the new era of AI PCs.
+                    <br /><br />
+                    According to Qualcomm on October 24, the new chip is faster
+                    than the M2 Max in some functions and more powerful than
+                    Apple and Intel chips. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsa dolores quidem autem,
+                    distinctio unde consequuntur alias libero omnis vel officia?
+                    Rerum illo velit aliquid assumenda minus iusto, veritatis
+                    inventore sint?
+                  </span>
+                </p>
+                <button onclick="readmore2()" class="btn-readmore" id="btn2">
+                  Read more
+                </button>
+              </div>
+              <!-- related news start -->
+
+              <!-- related news end -->
+            </div>
+          </div>
+
+          <div class="main" id="three">
+            <div class="main-01">
+              <div class="news_title">
+                <h1>AI Is Already at a Tipping Point</h1>
+              </div>
+              <div class="datetime">
+                <i class="fa fa-clock-o"></i>
+                <span>October, 25, 2023</span>
+              </div>
+              <div class="news_image">
+                <img src="images/photo_info3.png" alt="" />
+              </div>
+              <div class="new-category-quantity d-flex">
+                <div class="qtyplus" value="+">
+                  <button class="hp_button_like">
+                    <div class="hand">
+                      <div class="thumb"></div>
+                    </div>
+                  </button>
+                </div>
+                <input name="quantity" value="35" class="info" />
+
+                <div class="hp_comment d-flex align-items-center">
+                  <i
+                    class="fa fa-comment-o"
+                    aria-hidden="true"
+                    id="hp_icon_comment"
+                  ></i
+                  ><span class="number_cate">15</span>
+                  <!-- <p class="hp_cate">0</p> -->
+                </div>
+              </div>
+              <!-- three dot menu -->
+              <div class="dot_dropdown">
+                <!-- three dots -->
+                <ul
+                  class="dropbtn dot_icons btn-right showLeft"
+                  onclick="Dropdown3()"
+                >
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <!-- menu -->
+                <div id="hp_dropdown_list3" class="dropdown-content">
+                  <a href=""
+                    ><i class="fa fa-share" aria-hidden="true"></i
+                    ><span class="hp_share">Share</span></a
+                  >
+                  <a href=""
+                    ><i class="fa fa-floppy-o" aria-hidden="true"></i
+                    ><span class="hp_share">Save</span></a
+                  >
+                  <a href="#contact"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
+                    ><span class="hp_share">Report</span></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  Qualcomm has announced that it will officially unveil a new
+                  chip that supports AI functionality for Microsoft Windows PCs,
+                  and claims that it will be faster than Apple's chip. On
+                  another Mac.
+                  <br /><br />Qualcomm has said that the company's new
+                  Snapdragon Elite X chip will be available on PCs from next
+                  year, with a redesign to handle more AI tasks. Great for
+                  summarizing emails, writing articles and creating images.
+                  <br /><br />
+                  Those AI features will also be a key part of Qualcomm's chips
+                  for smartphones, as Google and Meta have both expressed
+                  satisfaction and plans to use them.
+                  <span id="dots3">...</span
+                  ><span id="more3">
+                    <img
+                      src="images/tech_img2.1.jpg"
+                      alt=""
+                      class="news_image"
+                    />
+                    At the same time, Microsoft called the new chip will help
+                    businesses and consumers in the new era of AI PCs.
+                    <br /><br />
+                    According to Qualcomm on October 24, the new chip is faster
+                    than the M2 Max in some functions and more powerful than
+                    Apple and Intel chips.
+                  </span>
+                </p>
+                <button onclick="readmore3()" class="btn-readmore" id="btn3">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main" id="four">
+            <div class="main-01">
+              <div class="news_title">
+                <h1>AI Is Already at a Tipping Point</h1>
+              </div>
+              <div class="datetime">
+                <i class="fa fa-clock-o"></i>
+                <span>October, 25, 2023</span>
+              </div>
+              <div class="news_image">
+                <img src="images/photo_info2.png" alt="" />
+              </div>
+              <div class="new-category-quantity d-flex">
+                <div class="qtyplus" value="+">
+                  <button class="hp_button_like">
+                    <div class="hand">
+                      <div class="thumb"></div>
+                    </div>
+                  </button>
+                </div>
+                <input name="quantity" value="35" class="info" />
+
+                <div class="hp_comment d-flex align-items-center">
+                  <i
+                    class="fa fa-comment-o"
+                    aria-hidden="true"
+                    id="hp_icon_comment"
+                  ></i
+                  ><span class="number_cate">15</span>
+                  <!-- <p class="hp_cate">0</p> -->
+                </div>
+              </div>
+              <!-- three dot menu -->
+              <div class="dot_dropdown">
+                <!-- three dots -->
+                <ul
+                  class="dropbtn dot_icons btn-right showLeft"
+                  onclick="Dropdown4()"
+                >
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <!-- menu -->
+                <div id="hp_dropdown_list4" class="dropdown-content">
+                  <a href=""
+                    ><i class="fa fa-share" aria-hidden="true"></i
+                    ><span class="hp_share">Share</span></a
+                  >
+                  <a href=""
+                    ><i class="fa fa-floppy-o" aria-hidden="true"></i
+                    ><span class="hp_share">Save</span></a
+                  >
+                  <a href="#contact"
+                    ><i class="fa fa-exclamation-circle" aria-hidden="true"></i
+                    ><span class="hp_share">Report</span></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Natus sunt nihil beatae distinctio quos eveniet, ipsum
+                  deserunt recusandae rerum aliquam.
+                  <br /><br />Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ducimus labore illum quas incidunt. Sapiente
+                  eum adipisci, exercitationem, quis perspiciatis recusandae est
+                  ea laudantium quisquam nesciunt consectetur animi tempora
+                  error corrupti. <br /><br />
+                  Those AI features will also be a key part of Qualcomm's chips
+                  for smartphones, as Google and Meta have both expressed
+                  satisfaction and plans to use them.
+                  <span id="dots4">...</span
+                  ><span id="more4">
+                    <img
+                      src="images/tech_img2.1.jpg"
+                      alt=""
+                      class="news_image"
+                    />
+                    At the same time, Microsoft called the new chip will help
+                    businesses and consumers in the new era of AI PCs.
+                    <br /><br />
+                    According to Qualcomm on October 24, the new chip is faster
+                    than the M2 Max in some functions and more powerful than
+                    Apple and Intel chips. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsa dolores quidem autem,
+                    distinctio unde consequuntur alias libero omnis vel officia?
+                    Rerum illo velit aliquid assumenda minus iusto, veritatis
+                    inventore sint?
+                  </span>
+                </p>
+                <button onclick="readmore4()" class="btn-readmore" id="btn4">
+                  Read more
+                </button>
+              </div>
+              <!-- related news start -->
+
+              <!-- related news end -->
+            </div>
+          </div>
+          <!--  aside start-->
+          <aside class="aside">
+            <!-- popular news start -->
+            <div class="aside-container">
+              <div class="aside-head">
+                <span>Popular News</span>
+                <div class="head-line"></div>
+              </div>
+
+              <div class="popular-item">
+                <div class="link_image">
+                  <div class="click_image" onClick="information01()">
+                    <a class="media media-link" href="#top">
+                      <div class="item-img">
+                        <img src="images/tech_img2.jpg" alt="" />
                       </div>
-                    </div>
-                  </a>
+
+                      <div class="item-text">
+                        New chip era! Qualcomm ready to release AI chip for
+                        Windows PC faster ...
+                        <div class="time">
+                          <i class="fa fa-clock-o"></i>
+                          <span>October, 25, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item">
+                <div class="link_iamge">
+                  <div class="click_image" onClick="information02()">
+                    <a class="media media-link" href="#top">
+                      <div class="item-img">
+                        <img src="images/photo_info2.png" alt="" />
+                      </div>
+                      <div class="item-text">
+                        New chip era! Qualcomm ready to release AI chip for
+                        Windows PC faster ...
+                        <div class="time">
+                          <i class="fa fa-clock-o"></i>
+                          <span>October, 25, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-item">
+                <div class="link_iamge">
+                  <div class="click_image" onclick="information03()">
+                    <a class="media media-link" href="#top">
+                      <div class="item-img">
+                        <img src="images/photo_info3.png" alt="" />
+                      </div>
+                      <div class="item-text">
+                        New chip era! Qualcomm ready to release AI chip for
+                        Windows PC faster ...
+                        <div class="time">
+                          <i class="fa fa-clock-o"></i>
+                          <span>October, 25, 2023</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="popular-item">
               <div class="link_iamge">
-                <div class="click_image" onClick="information02()">
+                <div class="click_image" onClick="information04()">
                   <a class="media media-link" href="#top">
                     <div class="item-img">
                       <img src="images/photo_info2.png" alt="" />
@@ -473,154 +551,147 @@
                 </div>
               </div>
             </div>
-            <div class="popular-item">
-              <div class="link_iamge">
-                <div class="click_image" onclick="information03()">
-                  <a class="media media-link" href="#top">
-                    <div class="item-img">
-                      <img src="images/photo_info3.png" alt="" />
-                    </div>
-                    <div class="item-text">
-                      New chip era! Qualcomm ready to release AI chip for
-                      Windows PC faster ...
-                      <div class="time">
-                        <i class="fa fa-clock-o"></i>
-                        <span>October, 25, 2023</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="popular-item">
-            <div class="link_iamge">
-              <div class="click_image" onClick="information04()">
-                <a class="media media-link" href="#top">
-                  <div class="item-img">
-                    <img src="images/photo_info2.png" alt="" />
+            <!-- popular news end -->
+          </aside>
+          <!--  aside end-->
+          <!-- related news start -->
+          <div class="main-02">
+            <div class="related-news">
+              <div class="related-head">
+                <span>Related News</span>
+                <div class="line"></div>
+                <div id="view-all">View All</div>
+              </div>
+              <div class="flex-container">
+                <div class="related-item">
+                  <img src="images/photo_info2.png" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
                   </div>
-                  <div class="item-text">
-                    New chip era! Qualcomm ready to release AI chip for Windows
-                    PC faster ...
-                    <div class="time">
-                      <i class="fa fa-clock-o"></i>
-                      <span>October, 25, 2023</span>
-                    </div>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related01() ">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
+                <div class="related-item">
+                  <img src="images/photo_info4.png" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
                   </div>
-                </a>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related02()">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
+                <div class="related-item">
+                  <img src="images/photo_info5.png" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
+                  </div>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related03()">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
+                <div class="related-item">
+                  <img src="images/tech_img2.jpg" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
+                  </div>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related04()">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
+                <div class="related-item">
+                  <img src="images/tech_img2.jpg" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
+                  </div>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related05()">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
+                <div class="related-item">
+                  <img src="images/tech_img2.jpg" alt="" />
+                  <div class="datetime">
+                    <i class="fa fa-clock-o"></i>
+                    <span>October, 25, 2023</span>
+                  </div>
+                  <p id="title-info">New chip era! Qualcomm ready ...</p>
+                  <button class="read-post" onclick="related06()">
+                    <a href="#top"
+                      >Read Post
+                      <i
+                        class="fa fa-chevron-circle-right"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- popular news end -->
-        </aside>
-        <!--  aside end-->
-        <!-- related news start -->
-        <div class="main-02">
-          <div class="related-news">
-            <div class="related-head">
-              <span>Related News</span>
-              <div class="line"></div>
-              <div id="view-all">View All</div>
-            </div>
-            <div class="flex-container">
-              <div class="related-item">
-                <img src="images/photo_info2.png" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related01() ">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-              <div class="related-item">
-                <img src="images/photo_info4.png" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related02()">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-              <div class="related-item">
-                <img src="images/photo_info5.png" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related03()">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-              <div class="related-item">
-                <img src="images/tech_img2.jpg" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related04()">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-              <div class="related-item">
-                <img src="images/tech_img2.jpg" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related05()">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-              <div class="related-item">
-                <img src="images/tech_img2.jpg" alt="" />
-                <div class="datetime">
-                  <i class="fa fa-clock-o"></i>
-                  <span>October, 25, 2023</span>
-                </div>
-                <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related06()">
-                  <a href="#top">Read Post
-                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                  </a>
-                </button>
-              </div>
-            </div>
+          <!-- related news end -->
+        </section>
+        <!-- news details section end -->
+        <!-- for footer technology Website -->
+        <footer style="margin-top: 30px">
+          <div class="hp_footer">
+            <!-- hp_footer for manage footer in website -->
+            <h3>footer</h3>
           </div>
-        </div>
-        <!-- related news end -->
-      </section>
-      <!-- news details section end -->
-      <!-- for footer technology Website -->
-      <footer style="margin-top: 30px">
-        <div class="hp_footer">
-          <!-- hp_footer for manage footer in website -->
-          <h3>footer</h3>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
-  </div>
     <script src="js/slick_jquery.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/detail_script.js" type="text/javascript"></script>
+    <script src="js/slick_jquery.js" type="text/javascript"></script>
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/slick.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
