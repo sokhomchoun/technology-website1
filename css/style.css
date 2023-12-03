@@ -11,6 +11,7 @@ select {
 }
 .hp_header_position{
   background-color: #fff;
+  border-bottom: 1px solid #0074b6;
 }
 header{
   
@@ -54,11 +55,11 @@ header.scroll {
   float: left;
   height: 3px;
 }
-.post-container {
+/* .post-container {
   height: 100%;
   overflow: scroll;   
   overflow-x: hidden;
-}
+} */
 .navigation-wrapper{
   padding-top: 13px;
 }
