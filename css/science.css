@@ -158,7 +158,7 @@
   .card-container:hover .card .description a{
     text-decoration: underline !important;
   }
-
+  
 
   @media (max-width: 768px) {
     .carousel-container {
