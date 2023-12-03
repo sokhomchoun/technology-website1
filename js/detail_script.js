@@ -1,3 +1,72 @@
+function Dropdown1() {
+  document.getElementById("hp_dropdown_list1").classList.toggle("show1");
+
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show1')) {
+              openDropdown.classList.remove('show1');
+          }
+      }
+  }
+}
+function Dropdown2() {
+  document.getElementById("hp_dropdown_list2").classList.toggle("show2");
+
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show2')) {
+              openDropdown.classList.remove('show2');
+          }
+      }
+  }
+}
+function Dropdown3() {
+  document.getElementById("hp_dropdown_list3").classList.toggle("show3");
+
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show3')) {
+              openDropdown.classList.remove('show3');
+          }
+      }
+  }
+}
+function Dropdown4() {
+  document.getElementById("hp_dropdown_list4").classList.toggle("show4");
+
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show4')) {
+              openDropdown.classList.remove('show4');
+          }
+      }
+  }
+}
+
 //  read more btn
 
 function readmore1() {
@@ -121,5 +190,3 @@ const related02 = () => {
   document.getElementById("three").style.display = "none";
   document.getElementById("four").style.display = "none";
 };
-
-// scroll up

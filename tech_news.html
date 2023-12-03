@@ -53,6 +53,7 @@
         </div>
       </header>
       <!-- news details section start -->
+      <div id="top"></div>
       <section class="news_details">
         <div class="main" id="one">
           <div class="main-01">
@@ -91,7 +92,7 @@
               <!-- three dots -->
               <ul
                 class="dropbtn dot_icons btn-right showLeft"
-                onclick="showDropdown1()"
+                onclick="Dropdown1()"
               >
                 <li></li>
                 <li></li>
@@ -180,14 +181,14 @@
               <!-- three dots -->
               <ul
                 class="dropbtn dot_icons btn-right showLeft"
-                onclick="showDropdown1()"
+                onclick="Dropdown2()"
               >
                 <li></li>
                 <li></li>
                 <li></li>
               </ul>
               <!-- menu -->
-              <div id="hp_dropdown_list1" class="dropdown-content">
+              <div id="hp_dropdown_list2" class="dropdown-content">
                 <a href=""
                   ><i class="fa fa-share" aria-hidden="true"></i
                   ><span class="hp_share">Share</span></a
@@ -276,14 +277,14 @@
               <!-- three dots -->
               <ul
                 class="dropbtn dot_icons btn-right showLeft"
-                onclick="showDropdown1()"
+                onclick="Dropdown3()"
               >
                 <li></li>
                 <li></li>
                 <li></li>
               </ul>
               <!-- menu -->
-              <div id="hp_dropdown_list1" class="dropdown-content">
+              <div id="hp_dropdown_list3" class="dropdown-content">
                 <a href=""
                   ><i class="fa fa-share" aria-hidden="true"></i
                   ><span class="hp_share">Share</span></a
@@ -364,14 +365,14 @@
               <!-- three dots -->
               <ul
                 class="dropbtn dot_icons btn-right showLeft"
-                onclick="showDropdown1()"
+                onclick="Dropdown4()"
               >
                 <li></li>
                 <li></li>
                 <li></li>
               </ul>
               <!-- menu -->
-              <div id="hp_dropdown_list1" class="dropdown-content">
+              <div id="hp_dropdown_list4" class="dropdown-content">
                 <a href=""
                   ><i class="fa fa-share" aria-hidden="true"></i
                   ><span class="hp_share">Share</span></a
@@ -435,7 +436,7 @@
             <div class="popular-item">
               <div class="link_image">
                 <div class="click_image" onClick="information01()">
-                  <a class="media media-link">
+                  <a class="media media-link" href="#top">
                     <div class="item-img">
                       <img src="images/tech_img2.jpg" alt="" />
                     </div>
@@ -456,7 +457,7 @@
             <div class="popular-item">
               <div class="link_iamge">
                 <div class="click_image" onClick="information02()">
-                  <a class="media media-link">
+                  <a class="media media-link" href="#top">
                     <div class="item-img">
                       <img src="images/photo_info2.png" alt="" />
                     </div>
@@ -475,7 +476,7 @@
             <div class="popular-item">
               <div class="link_iamge">
                 <div class="click_image" onclick="information03()">
-                  <a class="media media-link">
+                  <a class="media media-link" href="#top">
                     <div class="item-img">
                       <img src="images/photo_info3.png" alt="" />
                     </div>
@@ -496,7 +497,7 @@
           <div class="popular-item">
             <div class="link_iamge">
               <div class="click_image" onClick="information04()">
-                <a class="media media-link">
+                <a class="media media-link" href="#top">
                   <div class="item-img">
                     <img src="images/photo_info2.png" alt="" />
                   </div>
@@ -532,9 +533,10 @@
                   <span>October, 25, 2023</span>
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
-                <button class="read-post" onclick="related01()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                <button class="read-post" onclick="related01() ">
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
               <div class="related-item">
@@ -545,8 +547,9 @@
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
                 <button class="read-post" onclick="related02()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
               <div class="related-item">
@@ -557,8 +560,9 @@
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
                 <button class="read-post" onclick="related03()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
               <div class="related-item">
@@ -569,8 +573,9 @@
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
                 <button class="read-post" onclick="related04()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
               <div class="related-item">
@@ -581,8 +586,9 @@
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
                 <button class="read-post" onclick="related05()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
               <div class="related-item">
@@ -593,8 +599,9 @@
                 </div>
                 <p id="title-info">New chip era! Qualcomm ready ...</p>
                 <button class="read-post" onclick="related06()">
-                  Read Post
-                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <a href="#top">Read Post
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  </a>
                 </button>
               </div>
             </div>
@@ -611,7 +618,7 @@
         </div>
       </footer>
     </div>
-
+  </div>
     <script src="js/slick_jquery.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/detail_script.js" type="text/javascript"></script>
