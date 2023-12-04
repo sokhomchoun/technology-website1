@@ -8,12 +8,12 @@
     min-height: auto;
 }
 .cons{
-    top: 5px;
+    top: 55px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
-    width: 900px;
+    width: 700px;
     height: 200px;
     background: #fcfcfc;
     transition: 0.25s;
