@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 section {
   padding: 0 5rem;
 }
@@ -17,10 +20,17 @@ section {
   justify-content: space-between;
   gap: 3rem;
 }
+.videos video {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .quote {
   font-family: "Lobster", sans-serif;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .quote #author {
   font-size: 15px;
@@ -33,7 +43,7 @@ section {
   bottom: 2.5rem;
 }
 .picture img {
-  height: 350px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;

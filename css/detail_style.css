@@ -1,7 +1,6 @@
 #top {
   position: relative;
   bottom: 110;
-  transition: 0.5s ease-out;
 }
 .news_details {
   display: flex;
