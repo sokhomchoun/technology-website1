@@ -1,0 +1,566 @@
+/*Science Header*/
+body{
+    margin: 0px;
+}
+.navbarHeader ul{
+    width: 100%;
+    list-style-type: none;
+    background-color: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navbarHeader a{
+    text-decoration: none;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0c0c0c !important;
+    cursor: pointer;  
+    pointer-events:visiblePainted;
+}
+.navbarHeader a:hover{
+    background-color: none;
+}
+.navbarHeader li{
+    float: left;
+    margin-right: 50px;
+}
+.h1{
+    text-decoration: none;
+    text-align: left;
+    padding: 15px;
+}
+.navbar ul{
+    width: 100%;
+    list-style-type: none;
+    background-color: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(0, 255, 238);
+}
+.navbar li{
+    float: left;
+}
+
+/*MY NEWS ITEMS*/
+.row1{
+    background: none;
+    display: flex;
+    height: 88%;
+    align-items:center;
+}
+.col11{
+    float: left;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    height: 590px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.loading{
+    background-color: none;    
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 15px;
+    flex-basis: 50%;
+    width: 500px;
+    height: 300px;
+    left: 25%;
+}
+.loading::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    transform: translate(-100%);
+    animation: loading 5s infinite;
+    align-items: center;
+
+}
+
+.item1 {
+    min-height: 20px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 0px -2px rgb(0,0,0,0.32);
+    padding: 40px;
+    margin: 0 auto;
+    display: block;
+    height: 400px;
+    background-image: url(/images/sciMT/image/0010.jpg);
+
+}
+
+.headAni{
+    color: #fff;
+    font-size: 30px;
+    left: 0;
+    text-shadow: 0 0 5px #ffffff;
+
+}
+.contentAni{
+    background: none;
+    color: #fff;
+    align-items: center;
+    font-size: 17px;
+    flex-basis: 50%;
+    margin-left: 0%;
+    width: 500px;
+    height: 120px;
+    left: 0;
+}
+@keyframes loading{
+    from 100%{
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(80%);
+    }
+}
+
+.col12{
+    float: left;
+    flex-basis: 50%;
+    height: 590px;
+}
+
+.cardItems .card .cardDecoration{
+    background-color: #000000a1;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+    margin-top: 9rem;
+    font-size: 12px;
+}
+.cardItems .card .hArtCard{
+    margin-right: 120px;
+    height: 80px;
+    margin-top: 7rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px#ffffff;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    font-size: 18px;
+    float: left;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    color: #ffffff;
+}
+
+.card121{
+ 
+    background-image: url(/images/sciMT/image/0013.jpg);
+}
+.card122{
+    background-image: url(/images/sciMT/image/0011.jpg);
+}
+.card123{
+    background-image: url(/images/sciMT/image/0009.jpg);
+}
+.card124{
+    background-image: url(/images/sciMT/image/0004.jpg);
+}
+.card125{
+    background-image: url(/images/sciMT/image/0006.jpg);
+}
+.card126{
+    background-image: url(/images/sciMT/image/0008.jpg);
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.hArtCard h8 {
+    margin-top: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    font-size: 25px;
+}
+.pArtCard p{
+    margin-top: 1rem;
+    text-align: left;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+}
+.asideSci{
+    width: 35%;
+}
+.asideSciContainer{
+    padding: 25px;
+}
+.asideSciHead{
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 40px solid rgb(158, 25, 131);
+	border-right: 25px solid transparent;
+	height: 40px;
+	width: 200px;
+    position: relative;
+}
+.asideSciHead span{
+    position: relative;
+    top: 5px;
+    left: 15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+}
+.headSciline{
+    position: relative;
+    border-bottom: 5px solid rgb(158, 25, 131);
+    width: 665px;
+    left: 0;
+    bottom: -5px;
+}
+.row2{
+    background: none;
+    display: flex;
+    height: 88%;
+    align-items:center;
+}
+.col21{
+    width: 100%;
+    height: 350px;
+    float: left;
+}
+
+.card211{
+    background-image: url(/images/sciMT/image/0005.jpg);
+}
+.card212{
+    background-image: url(/images/sciMT/image/0010.jpg);
+}
+.card213{
+    background-image: url(/images/sciMT/image/0014.jpg);
+}
+.card214{
+    background-image: url(/images/sciMT/image/0010.jpg);
+}
+.card215{
+    background-image: url(/images/sciMT/image/0006.jpg);
+}
+.card216{
+    background-image: url(/images/sciMT/image/0008.jpg);
+}
+
+.col21 .headSciline{
+    position: relative;
+    border-bottom: 5px solid rgb(158, 25, 131);
+    width: 1355px;
+    left: 0;
+    bottom: -5px;
+}
+.row3{
+    background: none;
+    display: flex;
+    height: 88%;
+    align-items:center;
+}
+.col31{
+    color: #ffffff;
+    width: 100%;
+    height: 600px;
+    flex-basis: 50%;
+}
+
+
+.card311 video{
+    border-radius: 30px;
+    border-color: aqua;
+    border-style:groove;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 230px;
+    font-size: 12px;
+}
+
+.card312 video{
+    border-radius: 30px;
+    border-color: aqua;
+    border-style:groove;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 230px;
+    font-size: 12px;
+}
+
+.card31 .headSciline{
+    position: relative;
+    border-bottom: 5px solid rgb(158, 25, 131);
+    width: 1355px;
+    left: 0;
+    bottom: -10px;
+}
+.col32{
+    background: none;
+    color: #ffffff;
+    width: 100%;
+    height: 600px;
+    flex-basis: 50%;
+    
+}
+
+.wrapperTechnology {
+    width: 100%;
+    height: 100vh;
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTechnology {
+    height: 400px;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.cardTec {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0,0, 0.8) ;
+}
+
+.cardTec > .rowTec {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cardTec > .rowTec > .iconTec {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.cardTec > .rowTec > .descriptionTec {
+    background-color: #000000a1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.descriptionTec h4 {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.descriptionTec p {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    height: 50px;
+    padding-top: 0px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 300px;
+
+}
+
+input:checked + label .descriptionTec {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.cardTec[for="slideTec1"] {
+background-image: url("/images//sciMT/image/0002.jpg");
+}
+
+.cardTec[for="slideTec2"] {
+    background-image: url("/images/sciMT/image/0004.jpg");
+}
+
+.cardTec[for="slideTec3"] {
+    background-image: url("/images/sciMT/image/0005.jpg");
+}
+
+.cardTec[for="slideTec4"] {
+    background-image: url("/images/sciMT/image/0006.jpg");
+}
+
+.card32 .headSciline{
+    position: relative;
+    border-bottom: 5px solid rgb(158, 25, 131);
+    width: 1355px;
+    left: 0;
+    bottom: -10px;
+}
+
+.row4{
+    display: flex;
+    height: 88%;
+    align-items:center;
+    background-color: hsl(from color h s l);
+}
+.col41{
+    background-color: none;
+    width: 100%;
+    height: 350px;
+}
+
+.card411{
+    background-image: url(/images/sciMT/image/0005.jpg);
+}
+.card412{
+    background-image: url(/images/sciMT/image/0004.jpg);
+}
+.card413{
+    background-image: url(/images/sciMT/image/0002.jpg);
+}
+.card414{
+    background-image: url(/images/sciMT/image/0005.jpg);
+}
+.card415{
+    background-image: url(/images/sciMT/image/0004.jpg);
+}
+.card416{
+    background-image: url(/images/sciMT/image/0002.jpg);
+}
+
+.col41 .headSciline{
+    position: relative;
+    border-bottom: 5px solid rgb(158, 25, 131);
+    width: 1355px;
+    left: 0;
+    bottom: -5px;
+}
+
+/*icon Nav-bar back-next */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
+  }
+  .nav{
+    gap: 1rem;
+  }
+  .prev{
+    display: none;
+  }
+  .show{
+    display: block !important;
+    cursor: pointer;
+  }
+  .next{
+    cursor: pointer;
+  }
+  .hide{
+    visibility: hidden !important;
+  }
+
+/*FooterPart*/
+.footerPart{
+    background: #000000;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    bottom: 0;
+}
+.footerP{
+    border-bottom: 1px solid #0074b6;
+    margin-top: 8rem;
+  }
+.txt_footer{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.subscribe{
+    font-size: 18px;
+    font-weight: 600;
+    color:#0074b6;
+}
+.btn_subscribe{
+    border: none;
+    background: #0074b6;
+    color: #fff;
+    border-radius: 19px;
+    height: 35px;
+    width: 140px;
+}
+#footer_chevron{
+    margin-right: 10px;
+    color:#0074b6;
+}
+.txt_research{
+    font-size: 18px;
+    color:#0074b6;
+    font-weight: 600;
+}
+.category_footer{
+    border-bottom: 1px solid #0074b6;
+}
+#text_category{
+    color: #fff;
+}
+
+  /* end footer  */
+  
+
