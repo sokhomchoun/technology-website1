@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #top {
   position: relative;
   bottom: 110;
