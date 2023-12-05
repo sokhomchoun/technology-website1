@@ -1,17 +1,3 @@
-
-// scrolling load change background color 
-// window.onscroll = () => {
-//   const header = document.querySelector('#hp_scroll_load_change_background');
-//   if(this.scrollY <= 1)
-//     header.className = ''; 
-//   else {
-//     header.className = 'scroll';
-//   }
-// };
-// end scrolling load chagne background color 
-
-
-
 // slick slide scroll 
 
 $(document).ready(function(){
@@ -19,9 +5,6 @@ $(document).ready(function(){
   slidesToShow: 4,
   slidestoScroll:1,
   infinite: true,
-  // autoplay:true,
-  // dots:true,
-  centerMode: true,
   prevArrow:'.hp_cheron_left',
   nextArrow:'.hp_cheron_right',
   });
@@ -32,9 +15,6 @@ $(document).ready(function(){
   slidesToShow: 4,
   slidestoScroll:1,
   infinite: true,
-  // autoplay:true,
-  // dots:true,
-  centerMode: true,
   prevArrow:'.hp_cheron_left_new',
   nextArrow:'.hp_cheron_right_new',
   });
