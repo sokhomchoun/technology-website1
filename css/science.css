@@ -1,17 +1,12 @@
 .my-section{
     position: relative;
 }
-.big-img img{
+.videos video{
     width: 100%;
     height: 75vh;
     object-fit: cover;
-}
-.big-text{
-    font-size: 36px;
-    position: absolute;
-    color: #fff;
-    top: 25%;
-    left: 10vh;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .header-line{
     width: 100%;
