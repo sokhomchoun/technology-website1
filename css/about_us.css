@@ -27,20 +27,24 @@ section {
   border-radius: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.text-content {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
 .quote {
   font-family: "Lobster", sans-serif;
-  font-size: 2rem;
-  margin-top: 1rem;
+  font-size: 1.8rem;
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
 }
-.quote #author {
-  font-size: 15px;
-  color: #b1b1b1;
-  font-family: "Poppins", sans-serif;
+.quote #left {
+  position: relative;
+  right: 2rem;
+  top: 1.5rem;
 }
 .quote #right {
   position: relative;
-  left: 21rem;
-  bottom: 2.5rem;
+  left: 22rem;
 }
 .picture img {
   height: 300px;
