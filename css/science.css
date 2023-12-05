@@ -102,7 +102,7 @@
     padding-right: 1.5rem;
     cursor: pointer;
   }
-  .card {
+  .mycard {
     width: 100%;
     height: 100%;
     background-position: center bottom;
@@ -132,8 +132,9 @@
   .hide{
     visibility: hidden !important;
   }
-  .card img{
+  .mycard img{
     height: 60%;
+    width: 100%;
     object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -149,13 +150,13 @@
     font-weight: bold;
     line-height: 1;
   }
-  .card{
+  .mycard{
     border: none ;
   }
-  .card:hover{
+  .mycard:hover{
     border: 1.5px solid rgba(0, 0, 0, .125);
   }
-  .card-container:hover .card .description a{
+  .card-container:hover .mycard .description a{
     text-decoration: underline !important;
   }
   
