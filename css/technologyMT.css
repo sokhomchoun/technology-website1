@@ -2,6 +2,12 @@
 body{
     margin: 0px;
 }
+.SlideH{
+    width: 100%;
+    height: 1000x;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
 .navbarHeader ul{
     width: 100%;
     list-style-type: none;
@@ -60,23 +66,139 @@ body{
 .navbar li{
     float: left;
 }
+/*Slide Items*/
+.containerTech{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
 
+}
+.containerTech button{
+    font-size: 20px;
+}
+#slideTech{
+    width: max-content;
+    margin-top: 50px;
+}
+.itemTech{
+    width: 200px;
+    height: 300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+.itemTech:nth-child(1),
+.itemTech:nth-child(2){
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+.itemTech:nth-child(3){
+    left: 50%;
+}
+.itemTech:nth-child(4){
+    left:calc(50% + 220px);
+}
+.itemTech:nth-child(5){
+    left:calc(50% + 440px);
+}
+.itemTech:nth-child(n+6){
+    left:calc(50% + 660px);
+    opacity: 0;
+}
+.itemTech .contenTech{
+    position: absolute;
+    bottom: 65%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    padding: 0;
+    color: #eee;
+    transform: translate(0, 50%);
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.itemTech:nth-child(2) .contenTech{
+    display: block;
+    z-index: 11111;
+}
+.itemTech .nametech{
+    font-weight: bold;
+    text-shadow: 0 0 5px#ffffffcd;
+    font-size: 40px;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.itemTech .destech{
+    background-color: rgba(34, 34, 51, 0.363);
+    font-size: 25px;
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+
+}
+.itemTech button{
+    padding: 10px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+
+}
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+.buttonBackandNext{
+    position: absolute;
+    bottom: 30px;
+    z-index: 222222;
+    text-align: center;
+    width: 100%;
+}
+.buttonBackandNext button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    transition: 0.5s;
+    margin: 20px;
+
+}.buttonBackandNext button:hover{
+    background-color: rgba(57, 211, 250, 0.196);
+}
+/*End Slide Items*/
 /*MY NEWS ITEMS*/
 .row1{
-    background: none;
-    display: flex;
-    height: 88%;
-    align-items:center;
-}
-.col11{
-    margin: 3.1rem;
     float: left;
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    height: 590px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 510px;
 }
+
 .loading{
     background-color: none;    
     min-height: 100px;
@@ -94,11 +216,10 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, transparent, #fff, transparent);
+    background: linear-gradient(to right, transparent, #ffffff72, transparent);
     transform: translate(-100%);
     animation: loading 5s infinite;
     align-items: center;
-
 }
 
 .item1 {
@@ -108,21 +229,21 @@ body{
     padding: 40px;
     margin: 0 auto;
     display: block;
-    height: 400px;
-    background-image: url(/images/sciMT/image/0010.jpg);
-
+    width: 500px;
+    height: 300px;
+    background-image: url(/images/sciMT/image/sumUp.webp);
+    margin-top: 7rem;
 }
 
 .headAni{
-    color: #fff;
+    color: #000000;
     font-size: 30px;
     left: 0;
-    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 5px #1411117b;
 
 }
 .contentAni{
-    background: none;
-    color: #fff;
+    color: #000000;
     align-items: center;
     font-size: 17px;
     flex-basis: 50%;
@@ -141,21 +262,29 @@ body{
 }
 
 .col12{
-    float: left;
-    flex-basis: 50%;
-    height: 590px;
+    height: 90px;
 }
-
-.cardItems .card .cardDecoration{
-    background-color: #000000a1;
+.card-time{
+    color: rgb(116, 116, 116);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 90px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+}
+.card .cardDecoration{
+    bottom: 5%;
+    background-color: #00000070;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
-    height: 70px;
-    margin-top: 9rem;
+    width: 240px;
+    height: 135px;
+    margin-top: 5rem;
     font-size: 12px;
 }
-.cardItems .card .hArtCard{
+.card .hArtCard{
     margin-right: 120px;
     height: 80px;
     margin-top: 7rem;
@@ -164,41 +293,75 @@ body{
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.cardItems .card .hArtCard{
+    margin-right: 120px;
+    height: 80px;
+    margin-top: 7rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px#ffffff;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .card{
-    width: 200px;
+    width: 240px;
     height: 230px;
-    font-size: 18px;
+    font-size: 15px;
     float: left;
     align-items: center;
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 10px 15px;
+    margin: 15px;
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
     color: #ffffff;
+    margin-top: 2rem;
 }
 
 .card121{
  
-    background-image: url(/images/sciMT/image/0013.jpg);
+    background-image: url(/images/sciMT/image/deleteInfo.webp);
 }
 .card122{
-    background-image: url(/images/sciMT/image/0011.jpg);
+    background-image: url(/images/sciMT/image/Elon\ Musk\ \ James\ Duncan\ Davidson.jpg);
 }
 .card123{
-    background-image: url(/images/sciMT/image/0009.jpg);
+    background-image: url(/images/sciMT/image/gemini.jpg);
 }
-.card124{
-    background-image: url(/images/sciMT/image/0004.jpg);
+.card125 video{
+    border-radius: 20px;
+    border-color: aqua;
+    border-style: groove;
+    /* margin: 55px; */
+    /* margin-top: 0rem; */
+    width: 400px;
+    height: 230px;
 }
+.card124 video{
+    border-radius: 20px;
+    border-color: aqua;
+    border-style: groove;
+    margin: 10px;
+    width: 400px;
+    height: 230px;
+}
+
 .card125{
-    background-image: url(/images/sciMT/image/0006.jpg);
+    background-image: url(/images/sciMT/image/amd.webp);
 }
 .card126{
-    background-image: url(/images/sciMT/image/0008.jpg);
+    background-image: url(/images/sciMT/image/temu.webp);
+}
+.card127{
+    background-image: url(/images/sciMT/image/qr.webp);
+}
+.card128{
+    background-image: url(/images/sciMT/image/venmo.webp);
+}
+.card129{
+    background-image: url(/images/sciMT/image/meta.webp);
 }
 .card:hover{
     transform: translateY(-15px);
@@ -208,17 +371,18 @@ body{
     margin-top: 2rem;
     color: #ffffff;
     text-shadow: 0 0 5px #ffffff;
-    font-size: 25px;
+    font-size: 15px;
 }
 .pArtCard p{
     margin-top: 1rem;
     text-align: left;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
+    word-wrap: break-word;
 }
 .asideSci{
-    width: 35%;
+    width: 100%;
 }
 .asideSciContainer{
     padding: 25px;
@@ -243,53 +407,89 @@ body{
 .headSciline{
     position: relative;
     border-bottom: 5px solid rgb(158, 25, 131);
-    width: 665px;
+    width: 1400px;
     left: 0;
     bottom: -5px;
 }
 .row2{
-    background: none;
+    width: 100%;
+    height: 700px;
     display: flex;
-    height: 88%;
-    align-items:center;
+    align-items: center;
+    margin-top: 30rem;
 }
 .col21{
     width: 100%;
-    height: 350px;
+    height: 250px;
     float: left;
 }
 
 .card211{
-    background-image: url(/images/sciMT/image/0005.jpg);
+    background-image: url(/images/sciMT/image/deleteInfo.webp);
 }
 .card212{
-    background-image: url(/images/sciMT/image/0010.jpg);
+    background-image: url(/images/sciMT/image/arm.jpg);
 }
 .card213{
-    background-image: url(/images/sciMT/image/0014.jpg);
+    background-image: url(/images/sciMT/image/xAI.webp);
 }
 .card214{
-    background-image: url(/images/sciMT/image/0010.jpg);
+    background-image: url(/images/sciMT/image/tiktok.jpg);
 }
 .card215{
-    background-image: url(/images/sciMT/image/0006.jpg);
+    background-image: url(/images/sciMT/image/gitLOab.webp);
 }
 .card216{
-    background-image: url(/images/sciMT/image/0008.jpg);
+    background-image: url(/images/sciMT/image/disney.webp);
+}
+.card217{
+    background-image: url(/images/sciMT/image/truth.webp);
+}
+.card218{
+    background-image: url(/images/sciMT/image/openAI.webp);
+}
+.card219 video{
+    border-radius: 20px;
+    border-color: aqua;
+    border-style: groove;
+    margin: 70px;
+    margin-top: 2.1rem;
+    width: 400px;
+    height: 230px;
+}
+.card214 video{
+    border-radius: 20px;
+    border-color: aqua;
+    border-style: groove;
+    margin: 11px;
+    margin-top: 1.5rem;
+    width: 400px;
+    height: 230px;
 }
 
 .col21 .headSciline{
     position: relative;
     border-bottom: 5px solid rgb(158, 25, 131);
-    width: 1355px;
+    width: 1400px;
     left: 0;
     bottom: -5px;
 }
 .row3{
-    background: none;
+    width: 100%;
     display: flex;
-    height: 88%;
+    height: 600px;
     align-items:center;
+    margin-top: 12rem;
+    gap: 5rem;
+}
+.row3 .cardDecoration .pArtCard .hArtCard {
+    background-color: #000000a1;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+    margin-top: 9rem;
+    font-size: 12px;
 }
 .col31{
     color: #ffffff;
@@ -326,11 +526,12 @@ body{
 .card31 .headSciline{
     position: relative;
     border-bottom: 5px solid rgb(158, 25, 131);
-    width: 1355px;
+    width: 100%;
     left: 0;
     bottom: -10px;
 }
 .col32{
+    margin-top: 12rem;
     background: none;
     color: #ffffff;
     width: 100%;
@@ -402,16 +603,17 @@ body{
 
 .descriptionTec h4 {
     margin-bottom: 1rem;
-    font-size: 25px;
+    font-size: 13px;
     text-transform: uppercase;
     text-shadow: 0 0 5px #ffffff;
 }
 
 .descriptionTec p {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     height: 50px;
     padding-top: 0px;
+    font-size: 13px;
 }
 
 input {
@@ -429,19 +631,19 @@ input:checked + label .descriptionTec {
 }
 
 .cardTec[for="slideTec1"] {
-background-image: url("/images//sciMT/image/0002.jpg");
+background-image: url("/images//sciMT/image/okta.webp");
 }
 
 .cardTec[for="slideTec2"] {
-    background-image: url("/images/sciMT/image/0004.jpg");
+    background-image: url("/images/sciMT/image/rakuten.webp");
 }
 
 .cardTec[for="slideTec3"] {
-    background-image: url("/images/sciMT/image/0005.jpg");
+    background-image: url("/images/sciMT/image/venmo.webp");
 }
 
 .cardTec[for="slideTec4"] {
-    background-image: url("/images/sciMT/image/0006.jpg");
+    background-image: url("/images/sciMT/image/markzuckerberg.webp");
 }
 
 .card32 .headSciline{
@@ -465,19 +667,19 @@ background-image: url("/images//sciMT/image/0002.jpg");
 }
 
 .card411{
-    background-image: url(/images/sciMT/image/0005.jpg);
+    background-image: url(/images/sciMT/image/stockF.webp);
 }
 .card412{
-    background-image: url(/images/sciMT/image/0004.jpg);
+    background-image: url(/images/sciMT/image/gemini.jpg);
 }
 .card413{
-    background-image: url(/images/sciMT/image/0002.jpg);
+    background-image: url(/images/sciMT/image/harvard.webp);
 }
 .card414{
-    background-image: url(/images/sciMT/image/0005.jpg);
+    background-image: url(/images/sciMT/image/disney2.webp);
 }
 .card415{
-    background-image: url(/images/sciMT/image/0004.jpg);
+    background-image: url(/images/sciMT/image/elonMusk2.webp);
 }
 .card416{
     background-image: url(/images/sciMT/image/0002.jpg);
@@ -528,7 +730,7 @@ background-image: url("/images//sciMT/image/0002.jpg");
     margin-top: 8rem;
   }
 .txt_footer{
-    color: #ffffff;
+    color: #000000;
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 2px;
@@ -558,9 +760,10 @@ background-image: url("/images//sciMT/image/0002.jpg");
 .category_footer{
     border-bottom: 1px solid #0074b6;
 }
-#text_category{
-    color: #fff;
+#text_category-1{
+    color: #000000;
 }
+
 
   /* end footer  */
   
