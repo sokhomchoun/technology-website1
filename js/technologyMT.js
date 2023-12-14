@@ -1,4 +1,3 @@
-
 document.getElementById('nextImage').onclick = function(){
     let lists = document.querySelectorAll('.itemTech');
     document.getElementById('slideTech').appendChild(lists[0]);
